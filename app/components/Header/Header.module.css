@@ -1,0 +1,19 @@
+.header {
+    border-bottom: 1px solid cornflowerblue;
+    padding: 1rem;
+}
+.header ul {
+    list-style-type: none;
+}
+.header ul li {
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
