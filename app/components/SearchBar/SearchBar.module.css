@@ -1,0 +1,16 @@
+.SearchBar {
+    width: 50%;
+    padding: 3rem;
+    margin: 0 auto;
+}
+.SearchBar input {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 0.15rem solid #ccc;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.SearchBar input[type='text']:focus {
+    border: 0.15rem solid cornflowerblue;
+    outline: none;
+}
