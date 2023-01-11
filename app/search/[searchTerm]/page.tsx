@@ -15,8 +15,8 @@ type PageProps = {
 
 function SearchResults({ params: { searchTerm } }: PageProps) {
     const value = useContext(AppContext);
-    console.log('value', value?.sort);
     const fetcher = (args: any) => fetch(args).then((res) => res.json());
+
     const { data, error, isLoading } = useSWR(
         'https://course-api.com/react-store-products',
         fetcher
@@ -24,6 +24,7 @@ function SearchResults({ params: { searchTerm } }: PageProps) {
 
     if (isLoading) return;
     if (error) throw new Error('Something went wrong');
+
     let tempProducts = [...data];
     if (searchTerm) {
         tempProducts = tempProducts.filter((product) => {
