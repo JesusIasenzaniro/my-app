@@ -1,10 +1,11 @@
 .sortContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 2rem 0rem;
 }
 
-.sortContainer form select {
+.sortContainer select {
     border: 2px solid cornflowerblue;
     border-radius: 0.3rem;
     padding: 6px;
