@@ -4,13 +4,11 @@ import Link from 'next/link';
 
 const Header = () => {
     return (
-        <header className={styles.header}>
-            <ul>
-                <Link href='/' className={styles.link}>
-                    <li>Home</li>
-                </Link>
-            </ul>
-        </header>
+        <ul className={styles.header}>
+            <Link href='/' className={styles.link} data-testid='link'>
+                <li>Home</li>
+            </Link>
+        </ul>
     );
 };
 
